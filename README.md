@@ -1,6 +1,6 @@
 # Android-app-via-Java-230319
 
-Draght code, testing one of Android app. It runs anyway.  
+Draght code, testing one of Android apps. It runs anyway.  
 Under constructing.
 
 ## Some points:
