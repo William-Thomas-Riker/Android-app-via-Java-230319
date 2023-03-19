@@ -1,4 +1,4 @@
-# Android-app-in-Java-230319
+# Android-app-via-Java-230319
 
 Draght code, testing one of Android app. It runs anyway.  
 Under constructing.
