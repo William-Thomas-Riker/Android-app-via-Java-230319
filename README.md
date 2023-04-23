@@ -14,5 +14,5 @@ Build #AI-211.7628.21.2111.8139111
     As a result, it was possible to prevent any loss of display even when the screen was rotated.
 - IME optional listener  
     When you press the 'NEXT' button, the input value will be aligned to two decimal places.
-- fit out with 'ScrollFiew'
+- fit out with 'ScrollView'
 - redundant codes are left 
