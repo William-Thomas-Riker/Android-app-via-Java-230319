@@ -1,3 +1,6 @@
+/**
+*Copiright2023'William-Thomas-Riker'. All rights reserved.
+*/
 package com.example.errorofrestock;
 
 import androidx.appcompat.app.AppCompatActivity;
