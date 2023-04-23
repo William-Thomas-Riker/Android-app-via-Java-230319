@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--w616dp h948dp-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+    <data>
+        <variable name="dataBox" type="com.example.errorofrestock.CellData"/>
+    </data>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="16sp"
+    android:paddingBottom="16sp"
+    android:paddingStart="16sp"
+    android:paddingEnd="16sp">
+<!--layoutTable01-->
+<TableLayout
+    android:id="@+id/layoutTable01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow
+        android:id="@+id/topTitle01">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="ErrCheck"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="BEFORE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="AFTER"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="DIFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="RATIO(%)"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="RESTOCK"
+            android:textSize="18sp" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/hioctane">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="GASOLINE"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cell00"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data00)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell01"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data01)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell02"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data02)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell03"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data03)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell04"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data04)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/gasoline">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="HIOCTANE"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cell10"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data10)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell11"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data11)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell12"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data12)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell13"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data13)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell14"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data14)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/diesel">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="DIESEL"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cell20"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data20)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell21"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data21)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell22"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data22)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell23"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data23)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell24"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data24)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/kerosine">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="KEROSINE"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cell30"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data30)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell31"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data31)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell32"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data32)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell33"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data33)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell34"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data34)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+    </TableRow>
+    <!--ruler-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff8888ff"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+    <!--2nd TABLE-->
+    <TableRow>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="ErrChk"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="GASOLINE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="HIOCTANE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="DIESEL"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="KEROSINE"
+            android:textSize="18sp" />
+    </TableRow>
+    <!--BEFORE-->
+    <TableRow>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="BEFORE"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cell100"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data100)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell101"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data101)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell102"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data102)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell103"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data103)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+    </TableRow>
+    <!--AFTER-->
+    <TableRow>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="AFTER"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cell110"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data110)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell111"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data111)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell112"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data112)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/cell113"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal|numberSigned"
+            android:selectAllOnFocus="true"
+            android:text="@={dataBox.doubleToString(dataBox.data113)}"
+            android:textColor="#0000bb"
+            android:textSize="14sp" />
+    </TableRow>
+    <!--計算結果-->
+    <TableRow>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="DIFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cell120"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data120)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell121"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data121)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell122"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data122)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cell123"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@{dataBox.doubleToString(dataBox.data123)}"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </TableRow>
+</TableLayout>
+</ScrollView>
+</layout>
