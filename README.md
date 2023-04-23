@@ -11,6 +11,6 @@ Build #AI-211.7628.21.2111.8139111
 - @InverseMethod
 - extention of BaseObservable
 - IME optional listener
-  When you press the 'NEXT' button, the input value will be aligned to two decimal places.
+    When you press the 'NEXT' button, the input value will be aligned to two decimal places.
 - screen scrolling
 - redundant codes are left 
