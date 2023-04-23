@@ -1,5 +1,5 @@
 /**
-*Copiright2023'William-Thomas-Riker'. All rights reserved.
+*Copyright2023'William-Thomas-Riker'. All rights reserved.
 */
 package com.example.errorofrestock;
 
