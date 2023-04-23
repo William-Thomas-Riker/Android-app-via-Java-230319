@@ -9,7 +9,8 @@ Build #AI-211.7628.21.2111.8139111
 
 - 2 way data binding
 - @InverseMethod
-- extention of BaseObservable
+- extention of BaseObservable  
+    Instead of creating a 'ViewModel' class, the data for data binding was made a member of a subclass of 'BaseObservable'.
 - IME optional listener  
     When you press the 'NEXT' button, the input value will be aligned to two decimal places.
 - screen scrolling
