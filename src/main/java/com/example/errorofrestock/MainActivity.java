@@ -62,17 +62,4 @@ public class MainActivity extends AppCompatActivity {
       }
     }
   }
-    /* draft
-    void printComponentClassName (View v) {
-    if (v instanceof EditText){
-      Log.d("componentClassName" , getApplicationContext().getResources().getResourceName(v.getId()));
-    }
-      if ( v instanceof ViewGroup) {
-        ViewGroup layout = (ViewGroup) v;
-        for ( int i = 0 ; i < layout.getChildCount() ; i++){
-          printComponentClassName(layout.getChildAt(i));
-        }
-      }
-    }
-*/
 }
